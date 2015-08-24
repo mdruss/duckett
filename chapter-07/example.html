@@ -1,0 +1,37 @@
+<html>
+	<head>
+	<title>Form Example</title>
+	</head>
+	<body>
+		<form method="post" action="http://www.example.org/newsletter/signup.html" />
+			<fieldset>
+				<legend>Your Details</legend>
+				<label for="name">Name:<input id="name" type="text" name="name" placeholder="Come se llama?" size="30" maxlength="100" required="required"/></label>
+				<br />
+				<label for="email">Email:<input id="email" type="email" name="email" placeholder="example@example.com" size="30" maxlength="100" required="required"/></label>
+			</fieldset>
+			<p>
+			<fieldset>
+				<legend>Your Review:</legend>
+				<p>How did you hear about us?
+				<select type="multiple" name="referrer">
+					<option value="Google">Google</option>
+					<option value="Bing">Bing</option>
+					<option value="DuckDuckGo">DuckDuckGo</option>
+				</select>
+				</p>
+				<p>Would you visit again?
+				<br /><input type="radio" name="visit_us?" value="yes" />Yes<input type="radio" name="visit_us?" value="no" />No<input type="radio" name="visit_us?" value="maybe" />Maybe
+				</p>
+				<p>
+				<label for="comments">Comments:
+				<br /><textarea id="comments" type="textarea" rows="4" cols="40"></textarea></label>
+				</p>
+				<input id="email_updates?" type="checkbox" checked="checked" name="email_updates?" /><label for="email_updates?">Sign me up for email updates!</label>
+				<br />
+				<input type="submit" name="submit" value="Submit review" />
+			</fieldset>
+			</p>
+		</form>
+	</body>
+</html>
