@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hover, Active, and Focus</title>
+		<style type="text/css">
+		input {
+			padding: 6px 12px 6px 12px;
+			border: 1px solid #665544;
+			color: #ffffff;}
+		input.submit:hover {
+			background-color: #665544;}
+		input.submit:active {
+			background-color: chocolate;}
+		input.text {
+			color: #cccccc;}
+		input.text:focus {
+			color: #665544;}
+		</style>
+	</head>
+	<body>
+		<form method="GET" action="google.com/q?=">
+			<input class="text" type="email" name="email" placeholder="Enter email address..." />
+			<input class="submit" type="submit" name="submit" value="Submit" />
+		</form>
+	</body>
+</html>
