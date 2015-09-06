@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Styling Fieldsets and Legends</title>
+		<style type="text/css">
+			fieldset {
+				width: 300px;
+				border: 1px solid #dcdcdc;
+				border-radius: 10px;
+				padding: 10px;
+				text-align: left;
+				font-family: Arial, sans-serif;}
+			legend {
+				background-color: #efefef;
+				border: 1px solid #dcdcdc;
+				border-radius: 10px;
+				padding: 10px 20px;
+				text-align: left;
+				text-transform: uppercase;
+				font-family: Arial, sans-serif;
+				letter-spacing: .2em;}
+			#submit {
+				background-color: black;
+				color: white;
+				font-size: 75%;
+				font-weight: normal;
+				float: right;
+				border-radius: 5px;}
+			#submit:hover {
+				background-color: darkgray;}
+			input.text {
+				width: 200px;}
+		</style>
+	</head>
+	<body>
+		<form method="POST" action="http://www.example.com/q?=">
+			<fieldset>
+				<legend>Newsletter</legend>
+				<p>
+					<label for="name">Name</label>
+					<input class="text" id="name" type="text" name="name" /></label>
+				</p>
+				<p>
+				<label for="email">Email</label>
+				<input class="text" id="email" type="email" name="email" />
+				</p>
+				<p>
+					<input id="submit" type="submit" name="subscribe" value="Subscribe" />
+				</p>
+			</fieldset>
+		</form>
+	</body>
+</html>
